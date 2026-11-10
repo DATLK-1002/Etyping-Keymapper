@@ -14,7 +14,7 @@
 ## 📸 Hình ảnh Demo (Preview)
 
 ### Giao diện bảng trạng thái (HUD) hiển thị trực tiếp trên trang web
-![HUD Preview](./assets/hud-preview.png)
+![HUD Preview](./hud-preview.png)
 
 ---
 
