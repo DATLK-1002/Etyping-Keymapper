@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Studocu Crack",
+  "version": "3.5.1",
+  "description": "",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.e-typing.ne.jp/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "e-typing Key Remapper"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.e-typing.ne.jp/*"
+      ],
+      "js": [
+        "injected.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "*://*.e-typing.ne.jp/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ]
+}
